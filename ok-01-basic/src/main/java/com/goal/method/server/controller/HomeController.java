@@ -2,6 +2,7 @@ package com.goal.method.server.controller;
 
 import com.goal.method.server.domain.Person;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 @RestController
 public class HomeController {
@@ -22,4 +23,9 @@ public class HomeController {
         return "Person info " + person;
     }
 
+
+    @PutMapping("/upload")
+    public String upload(MultipartFile file) {
+        return "Receive file, name : " + file.getOriginalFilename();
+    }
 }
