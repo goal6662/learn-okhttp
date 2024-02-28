@@ -5,7 +5,10 @@ import okhttp3.HttpUrl;
 import okhttp3.Request;
 import org.junit.jupiter.api.Test;
 
-public class ClientGet {
+/**
+ * 如何通过HttpUrl添加请求参数
+ */
+public class GetClient {
 
     public static final String url = "http://localhost:8080";
 

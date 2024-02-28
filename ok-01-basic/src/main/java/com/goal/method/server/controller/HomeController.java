@@ -28,4 +28,9 @@ public class HomeController {
     public String upload(MultipartFile file) {
         return "Receive file, name : " + file.getOriginalFilename();
     }
+
+    @DeleteMapping("/delete/{item}")
+    public String delete(@PathVariable String item) {
+        return "Delete item : " + item;
+    }
 }

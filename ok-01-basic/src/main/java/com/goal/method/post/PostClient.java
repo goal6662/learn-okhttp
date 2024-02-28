@@ -9,7 +9,9 @@ import okhttp3.Request;
 import okhttp3.RequestBody;
 import org.junit.jupiter.api.Test;
 
-@Slf4j
+/**
+ * 如何添加请求体
+ */
 public class PostClient {
 
     public static final String url = "http://localhost:8080";

@@ -9,6 +9,9 @@ import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
+/**
+ * 如何发送文件
+ */
 public class PutClient {
 
     public static final String url = "http://localhost:8080";
